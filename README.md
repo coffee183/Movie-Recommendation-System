@@ -9,9 +9,9 @@ Data Preprocessing:
       Modify the original dataset to the form: UserId, MovieId, rating.
 
 Steps: 
-Build Co-occurrence matrix
-Compute average score of each user
-Normalize Co-occurrence matrix
-Build rating matrix
-Multiply Co-occurrence matrix with rating matrix, when the rating doesn't exist, use the user's average score instead
+Build Co-occurrence matrix,
+Compute average score of each user,
+Normalize Co-occurrence matrix,
+Build rating matrix,
+Multiply Co-occurrence matrix with rating matrix, when the rating doesn't exist, use the user's average score instead,
 Generate recommendation list
