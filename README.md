@@ -7,5 +7,11 @@ Multiple MapReduce jobs are used to build and normalize Co-occurrence Matrix, mu
 
 Data Preprocessing:
       Modify the original dataset to the form: UserId, MovieId, rating.
-Individual Job:
-      DivideDataByUserId: read in each line of the dataset, output a file has the following format - key: UserId, value: movieId1:rating1, movieId2: rating2,...
+
+Steps: 
+Build Co-occurrence matrix
+Compute average score of each user
+Normalize Co-occurrence matrix
+Build rating matrix
+Multiply Co-occurrence matrix with rating matrix, when the rating doesn't exist, use the user's average score instead
+Generate recommendation list
